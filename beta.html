@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>アプリβ版</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+    <!-- <script src="http://code.jquery.com/jquery&#45;1.6.4.min.js"></script> -->
+    <!-- <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile&#45;1.1.0.min.js"></script> -->
+    <script src="jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./jquery.mobile-1.3.1.min.js"></script>
+    <script type="text/javascript" src="./all.js"></script>
+
+
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<script>
+function getLawson(){
+    document.getElementById("rogo").src = "lawson.png";
+    var e = document.getElementById('storeName');
+    e.innerHTML = 'Lawson';
+    document.getElementById("rogo2").src = "lawson.png";
+    var e2 = document.getElementById('storeName2');
+    e2.innerHTML = 'Lawson';
+}
+function getCircleK(){
+    document.getElementById("rogo").src = "CircleK.png";
+    var e = document.getElementById('storeName');
+    e.innerHTML = 'サークルK';
+    document.getElementById("rogo2").src = "CircleK.png";
+    var e2 = document.getElementById('storeName2');
+    e2.innerHTML = 'サークルK';
+}
+function getMinistop(){
+    document.getElementById("rogo").src = "ministop.png";
+    var e = document.getElementById('storeName');
+    e.innerHTML = 'ミニストップ';
+    document.getElementById("rogo2").src = "ministop.png";
+    var e2 = document.getElementById('storeName2');
+    e2.innerHTML = 'ミニストップ';
+}
+function getSeveneleven(){
+    document.getElementById("rogo").src = "seveneleven.png";
+    var e = document.getElementById('storeName');
+    e.innerHTML = 'セブンイレブン';
+    document.getElementById("rogo2").src = "seveneleven.png";
+    var e2 = document.getElementById('storeName2');
+    e2.innerHTML = 'セブンイレブン';
+}
+function getFamilymart(){
+    document.getElementById("rogo").src = "familymart.png";
+    var e = document.getElementById('storeName');
+    e.innerHTML = 'Familymart';
+    document.getElementById("rogo2").src = "familymart.png";
+    var e2 = document.getElementById('storeName2');
+    e2.innerHTML = 'Familymart';
+}
+function getDaily(){
+    document.getElementById("rogo").src = "daily.png";
+    var e = document.getElementById('storeName');
+    e.innerHTML = 'ﾃﾞｲﾘｰﾔﾏｻﾞｷ';
+    document.getElementById("rogo2").src = "daily.png";
+    var e2 = document.getElementById('storeName2');
+    e2.innerHTML = 'ﾃﾞｲﾘｰﾔﾏｻﾞｷ';
+}
+
+//商品をクリックしたとき呼び出される関数
+function getFoofName(){
+    var e = document.getElementById('foodNames');
+    e.innerHTML += 'ファミチキ ';
+}
+
+</script>
+
+<div data-role="page" id="home">
+    <div data-role="content">
+        <a href="#menu"><img id="lawson" src="lawson.png" width="100" height="100" alt="ローソンのロゴ" onclick="getLawson()"></a>
+        <a href="#menu"><img id="CircleK" src="CircleK.png" width="100" height="100"　alt="サークルKのロゴ" onclick="getCircleK()"></a>
+        <a href="#menu"><img id="ministop" src="ministop.png" width="100" height="100"　alt="ミニストップのロゴ" onclick="getMinistop()"></a>
+
+        <img id="mascot" src="mascot.png" width="100" height="150"　alt="マスコットの画像">
+        <img id="title"  src="title.png" width="200" height="100"　alt="タイトルの画像">
+
+        <a href="#menu"><img id="seveneleven" src="seveneleven.png" width="120" height="120"　alt="セブンイレブンのロゴ" onclick="getSeveneleven()"></a>
+        <a href="#menu"><img id="familymart" src="familymart.png" width="100" height="100"　alt="ファミリーマートのロゴ" onclick="getFamilymart()"></a>
+        <a href="#menu"><img id="daily" src="daily.png" width="100" height="100"　alt="デイリーヤマザキのロゴ" onclick="getDaily()"></a>
+
+        <a href=""><img id="koukoku" src="koukoku.png" width="275" height="50"　alt="広告のバナー"></a>
+    </div>
+</div>
+
+<div data-role="page" id="menu">
+    <div data-role="header">
+        <a href="#home" class="ui-btn-left">back</a>
+        <h1></h1>
+    </div>
+    <div data-role="content">
+   	<img id="rogo" src="" width="100" height="100"　alt="ストアイメージ">
+    <h1><span id="storeName">お店の名前</span></h1>
+
+    <center>
+
+
+    <div style="position: relative;">
+        <a href="" style="text-decoration: none">
+            <div id="" class="inBtn"><b>新情報</b></div>
+        </a>
+    </div>
+
+
+
+    <div style="position: relative;">
+        <a href="" style="text-decoration: none">
+            <div id="" class="inBtn"><b>クーポン</b></div>
+        </a>
+    </div>
+
+
+
+    <div style="position: relative;">
+        <a href="#recommend" style="text-decoration: none">
+            <div id="" class="inBtn"><b>食べ合わせ案</b></div>
+        </a>
+    </div>
+
+    <a href=""><img id="koukoku" src="koukoku.png" width="275" height="50"　alt="広告のバナー"></a>
+    </div>
+    </center>
+</div>
+
+<div data-role="page" id="recommend">
+    <div data-role="header">
+        <a href="#menu" class="ui-btn-left">back</a>
+        <h1></h1>
+    </div>
+    <div data-role="content">
+    <img id="rogo2" src="" width="100" height="100"　alt="ストアイメージ">
+    <h1><span id="storeName2">お店の名前</span></h1>
+    <center>
+
+
+    <!--<form action="" method="post">
+    <p>
+    <label for="select-choice-0" class="select"><b>食べ合わせ案</b></label>
+    <select name="select-choice-0" id="foodslist">
+    </select>
+    </p>    -->
+    <!-- <p>食べ合わせ案<input type="text" name="goods" value="食べたい商品を入力して下さい"></p> -->
+    <!-- </form>    -->
+
+    <div style="position: relative;">
+        <a >
+            <label for="select-choice-0" class="select">健康状態を入力</label>
+            <select name="select-choice-0" id="select-choice-1">
+                <option value="0">便秘</option>
+                <option value="1">美容</option>
+                <option value="2">ダイエット</option>
+            </select>
+            <!-- <img id="healthStateBtn" src="menu1.png" width="300" height="50"　alt="健康状態を入力"> -->
+        </a>
+    <!-- <div style="position:absolute; top:10px; left:100; width: 200px;"> -->
+    <!-- 健康状態を入力 -->
+    </div>
+
+    <p></p>
+
+<!--8/4 ここから-->
+    <div style="position: relative;">
+        <a href="#selectCate" style="text-decoration: none" onclick="">
+            <div id="" class="inBtn"><b>食べたい商品を選択</b></div>
+        </a>
+    </div>
+    <p></p>
+
+
+    <span id = "foodNames"></span>
+
+<!--ここまで-->
+
+
+
+    <div style="position: relative;">
+        <a href="#result" style="text-decoration: none" onclick="getRecommendMenu()">
+            <div id="" class="inBtn"><b>検索</b></div>
+        </a>
+    </div>
+
+    <a href=""><img id="koukoku" src="koukoku.png" width="275" height="50"　alt="広告のバナー"></a>
+    </center>
+    </div>
+</div>
+
+<!--8/4 ここから-->
+
+<!--カテゴリー選択のページ-->
+<div data-role="page" id="selectCate">
+
+    <div data-role="header">
+        <a href="#recommend" class="ui-btn-left">back</a>
+        <h1></h1>
+    </div>
+    <div data-role="content">
+
+        <a href="#onigiriM"><img class="food" src="onigiri.jpg" name="foods_table" value="1"></a>
+        <a href="#agemonoM"><img class="food" src="chicken.jpg"name="foods_table" value="2"></a>
+        <a href="#breadM"><img class="food" src="bread.jpg"></a>
+        <a href="#dessertM"><img class="food" src="dessert.jpg"></a>
+
+    </div>
+</div>
+
+<!--おにぎりの商品選択ページ-->
+<div data-role="page" id="onigiriM">
+    <div data-role="header">
+        <a href="#selectCate" class="ui-btn-left">back</a>
+        <h1></h1>
+    </div>
+    <div data-role="content">
+             <ul data-role="listview" data-filter="true" id="onigirilist">
+              <li><p>こんにちは testes</p></li> 
+            </ul>
+    </div>
+</div>
+<!--揚げ物の商品選択ページ-->
+<div data-role="page" id="agemonoM">
+    <div data-role="header">
+        <a href="#selectCate" class="ui-btn-left">back</a>
+        <h1></h1>
+    </div>
+    <div data-role="content">
+             <ul data-role="listview" data-filter="true" id="agemonolist">
+              <li><p>こんにちは testes</p></li> 
+            </ul>
+    </div>
+</div>
+<!--パンの商品選択ページ-->
+<div data-role="page" id="breadM">
+    <div data-role="header">
+        <a href="#selectCate" class="ui-btn-left">back</a>
+        <h1></h1>
+    </div>
+    <div data-role="content">
+             <ul data-role="listview" data-filter="true" id="breadlist">
+              <li><p>こんにちは testes</p></li> 
+            </ul>
+    </div>
+</div>
+<!--洋菓子の商品選択ページ-->
+<div data-role="page" id="dessertM">
+    <div data-role="header">
+        <a href="#selectCate" class="ui-btn-left">back</a>
+        <h1></h1>
+    </div>
+    <div data-role="content">
+             <ul data-role="listview" data-filter="true" id="dessertlist">
+              <li><p>こんにちは testes</p></li> 
+            </ul>
+    </div>
+</div>
+
+<div data-role="page" id="result">
+    <div data-role="header">
+        <a href="#recommend" class="ui-btn-left">back</a>
+        <h1>結果</h1>
+    </div>
+    <div data-role="content">
+    <center>
+    <p><b>あなたのオススメ</b></p>
+    <p><b>食べ合わせは</b></p>
+    </center>
+        <img id="mascot2" src="mascot.png" width="100" height="100"　alt="マスコットの画像">
+
+<!--吹き出しとその中-->
+        <div style="position: relative;">
+            <img id="balloon_tab" src="balloon.png" width="200" height="100"　alt="マスコットの吹き出し">
+            <div><p><a id = "recommendMenu"></a></p></div>
+        </div>
+
+    <center>
+    <!--カロリーについてのタブ-->
+        <div style="position: relative;">
+            <a href="" style="text-decoration: none">
+                <div id="" class="inBtn"><b></b></div>
+            </a>
+        </div>
+        <div id="calorie" width="300" height="400"　alt="カロリーについてtxt読み込み"></div>
+    <!--栄養学解説タブ-->
+        <div style="position: relative;">
+            <a href="" style="text-decoration: none">
+                <div id="" class="inBtn"><b></b></div>
+            </a>
+        </div>
+        <div id="instruction" width="300" height="400"　alt="栄養解説についてtxt読み込み">ここにtxtのデータを読み込んで表示します。ここにtxtのデータを読み込んで表示します。ここにtxtのデータを読み込んで表示します。ここにtxtのデータを読み込んで表示します。ここにtxtのデータを読み込んで表示します。ここにtxtのデータを読み込んで表示します。ここにtxtのデータを読み込んで表示します。ここにtxtのデータを読み込んで表示します。ここにtxtのデータを読み込んで表示します。</div>
+
+        <div style="position: relative;">
+            <a href="" style="text-decoration: none" onclick="">
+                <div id="" class="inBtn"><b>その他の食べ合わせをCHECK</b></div>
+            </a>
+        </div>
+
+        <div style="position: relative;">
+            <a href="" style="text-decoration: none" onclick="">
+                <div id="inBtn2" class=""><b>無料会員登録すると<br>食生活の悩み解決機能が拡張</b></div>
+            </a>
+        </div>
+    </center>
+    </div>
+</div>
+
+<!-- ユーザには見せない、仮のデータを格納する所 -->
+<div id = "foodslist"></div>
+<div id = "matchingslist"></div>
+
+</body>
+</html>
